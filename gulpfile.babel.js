@@ -37,7 +37,7 @@ gulp.task('scripts', () => {
 });
 
 //Run
-gulp.task('default', ['copyHtml', 'sass', 'flexbox', 'webpack']);
+gulp.task('default', ['copyHtml', 'sass', 'flexbox', 'webpack', 'imageMin']);
 
 //Watch
 gulp.task('watch', () => {
@@ -53,3 +53,10 @@ gulp.task("webpack", function () {
         .pipe(gulpUglify())
         .pipe(gulp.dest("dist"));
 });
+
+// Image min
+gulp.task('imageMin', () =>
+    gulp.src('app/assets/*')
+        .pipe(gulpImageMin())
+        .pipe(gulp.dest('dist/assets'))
+);

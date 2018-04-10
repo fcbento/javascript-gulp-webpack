@@ -1,11 +1,29 @@
-#header{
-    li{
-        display: inline;
-        list-style: none;
-    }
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
 
+header{
+    #main-header{
+        padding: 15px;
+        input{
+            border:1px solid black;
+            padding: 10px;
+            font-size: 17px;
+            border-radius: 6px;
+        }
+    }
     nav{
         background-color: indigo;
+        padding: 15px;
+        li{
+            display: inline;
+            list-style: none;
+            color: white;
+            margin-right: 1rem;
+            font-size: 18px;
+        }
     }
 }
 
