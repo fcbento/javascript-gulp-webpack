@@ -14,19 +14,22 @@
 
     <header>
         <section id="main-header">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-xs-3">
-                        header
+                        <img src="assets/logo.png" alt="Merlin's Potions">
                     </div>
                     <div class="col-xs-3">
-                        <input type="text">
+                        <input type="text" placeholder="Search our stock">
                     </div>
                     <div class="col-xs-3">
-                        img
+                        <p>Free shipping on orders over $50</p>
                     </div>
-                    <div class="col-xs-3">
-                        bag
+                    <div class="col-xs-1">
+                        <img src="assets/bag.png" alt="">
+                    </div>
+                    <div class="col-xs-1">
+                        <p>BAG: 1</p>
                     </div>
                 </div>
             </div>
@@ -70,19 +73,21 @@
 
     <main id="main">
         <section>
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row center-xs" id="allPotions"></div>
                 <div id="myModal" class="modal">
                     <div class="modal-content">
-                            <span class="close">&times;</span>
+                        <span class="close">&times;</span>
                         <div class="row">
-                                <div class="col-xs-6">img</div>
+                            <div class="col-xs-6">
+                                <img id="image" width="350px;" alt="Potion name">
+                            </div>
                             <div class="col-xs-6">
                                 <p id="name"></p>
                                 <h6>User/Effect</h6>
                                 <p id="effect"></p>
                                 <h6>Ingredients</h6>
-                                <p id="ingredients"></p>
+                                <div id="ingredients"></div>
                                 <h6>Price</h6>
                                 <p id="price"></p>
                                 <button>add to cart</button>
@@ -99,10 +104,36 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-6">
-                    links
+
+                    <a href="">compnay</a>
+                    <a href="">contact us</a>
+                    <a href="">shipping</a>
+                    <a href="">returns</a>
+                    <a href="">careers</a>
+
+                    <div class="row" id="icons">
+                        <div class="col-xs-12">
+                            <i>icon1</i>
+                            <i>icon1</i>
+                            <i>icon1</i>
+                            <i>icon1</i>
+                            <i>icon1</i>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <p>&copy 2015 Merlin's Potions. All Rights Reserved</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-xs-6">
-                    newsletter
+                    <div id="news">
+                        <p>Sign up for Newsletter</p>
+                        <p>Sign up for our newsletter & gulpget exclusive discounts</p>
+                        <input type="text" placeholder="Enter your email">
+                        <button>SUBMIT</button>
+                    </div>
                 </div>
             </div>
         </div>

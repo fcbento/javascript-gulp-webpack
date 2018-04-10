@@ -2,20 +2,30 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-  }
+}
+
+$orange: #D73A0F;
+$indigo: #523468;
 
 header{
     #main-header{
-        padding: 15px;
+        padding: 25px;
         input{
             border:1px solid black;
             padding: 10px;
             font-size: 17px;
             border-radius: 6px;
+            &:focus{outline: none}
+            width: 100%;
+        }
+
+        img{
+            margin-left: 15px;
         }
     }
+
     nav{
-        background-color: indigo;
+        background-color: $indigo;
         padding: 15px;
         li{
             display: inline;
@@ -23,16 +33,67 @@ header{
             color: white;
             margin-right: 1rem;
             font-size: 18px;
+            margin-left: 1.5rem;
+        }
+    }
+}
+main{
+    #allPotions {
+        margin-top: 0.8rem;
+        p{
+            cursor: pointer;
+            font-size: 20px;
+        }
+        #potionImg{
+            width: 150px;
+            height: 150px;
+        }
+
+        span{
+            color: $orange;
         }
     }
 }
 
-#allPotions {
+footer{
+    background-color: #E6E6E6;
+    padding: 30px;
     a{
-        cursor: pointer;
-        font-size: 20px;
+      text-transform: uppercase;
+      color: $orange;
+      text-decoration: none;
+    }
+
+    #icons{
+        margin-top: 1rem;
+    }
+    #news{
+        background-color: white;
+        padding: 30px;
+        button {
+            background-color: #D73A0F;
+            color: white;
+            padding: 9px 20px;
+            border-color: transparent;
+            cursor: pointer;
+            font-size: 20px;
+            border-radius: 6px;
+            &:focus{
+                outline: none;
+            }
+        }
+
+        input{
+            border:1px solid black;
+            padding: 10px;
+            font-size: 17px;
+            border-radius: 6px;
+            &:focus{outline: none}
+            width: 60%;
+        }
     }
 }
+
 
 .modal{
     display: none;
@@ -45,6 +106,33 @@ header{
     overflow: auto;
     background-color: rgb(0, 0, 0);
     background-color: rgba(0,0,0,0.4);
+
+    button{
+        background-color: $orange;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        color: white;
+        border-color: transparent;
+        border-radius: 6px;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    h6{
+        font-size: 17px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    #price{
+        color: $orange;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    #ingredientm{
+        margin: 0;
+    }
 }
 
 .modal-content{
@@ -57,7 +145,7 @@ header{
 
 .close{
     float: right;
-    font-size: 28px;
+    font-size: 38px;
     color: #aaa;
     cursor: pointer;
 }
