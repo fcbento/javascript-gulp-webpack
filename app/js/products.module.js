@@ -1,11 +1,11 @@
+import productsModel from './products.model.json';
 
-
-
-class user {
-    showME(){
-        console.log('ssd')
+class ProductsModules {
+    getData() {
+        const potions = Object.values(productsModel.potions);
+        return potions;
     }
 }
 
-export default user;
+export default ProductsModules;
 

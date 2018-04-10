@@ -1,5 +1,5 @@
-import p from './products.module'
+import ProductController from './products.controller'
 
-const h = new p();
+const pc = new ProductController();
 
-h.showME();
+pc.displayPotions();    
