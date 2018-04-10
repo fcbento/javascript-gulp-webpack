@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,17 +9,95 @@
     <link rel="stylesheet" href="flexboxgrid.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-6">
-                ad
+
+    <header id="header">
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-3">
+                        header
+                    </div>
+                    <div class="col-xs-3">
+                        <input type="text">
+                    </div>
+                    <div class="col-xs-3">
+                        img
+                    </div>
+                    <div class="col-xs-3">
+                        bag
+                    </div>
+                </div>
             </div>
-            <div class="col-xs-6">
-                asd
+        </section>
+        <nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-9">
+                        <ul>
+                            <li>
+                                potions
+                            </li>
+                            <li>
+                                ingredients
+                            </li>
+                            <li>
+                                books
+                            </li>
+                            <li>
+                                supplies
+                            </li>
+                            <li>
+                                charms
+                            </li>
+                            <li>
+                                clearance
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-2">
+                        <ul>
+                            <li>Sign in</li>
+                            <span>or</span>
+                            <li>Sign up</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section>
+            <div class="container">
+                <div class="row center-xs" id="allPotions"></div>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p id="name"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6">
+                    links
+                </div>
+                <div class="col-xs-6">
+                    newsletter
+                </div>
             </div>
         </div>
-    </div>
+
+    </footer>
+
     <script src="bundle.js"></script>
 </body>
+
 </html>

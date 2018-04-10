@@ -41,8 +41,8 @@ gulp.task('default', ['copyHtml', 'sass', 'flexbox', 'webpack']);
 
 //Watch
 gulp.task('watch', () => {
-    gulp.watch('app/views/*.scss', ['sass']);
-    gulp.watch('app/views/*.html', ['copyHtml']);
+    gulp.watch('app/dist/*.scss', ['sass']);
+    gulp.watch('app/dist/*.html', ['copyHtml']);
     gulp.watch('app/js/*.js', ['webpack']);
 });
 
