@@ -16,3 +16,9 @@ gulp.task('sass', () => {
         .pipe(gulpSass().on('error', gulpSass.logError))
         .pipe(gulp.dest('dist'));
 });
+
+// Flexboxgrid to CSS
+gulp.task('flexbox', () => {
+    gulp.src('node_modules/flexboxgrid/css/flexboxgrid.min.css')
+        .pipe(gulp.dest('dist'));
+});
