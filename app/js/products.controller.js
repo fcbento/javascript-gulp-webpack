@@ -7,6 +7,7 @@ class ProductController {
     displayPotions() {
         const potions = pm.getData();
         potions.forEach((potion) => {
+            console.log(potion)
             const allPotionsDom = document.querySelector('#allPotions');
             allPotionsDom.innerHTML += `<div class="col-xs-4"> <a id="detailed_${potion.id}"> ${potion.name} </a> </div>`
         });
@@ -27,8 +28,17 @@ class ProductController {
     openModal(potion) {
         const modal = document.getElementById('myModal');
         const close = document.getElementsByClassName('close')[0];
+       
         let name = document.getElementById('name');
+        let effect = document.getElementById('effect');
+        let price = document.getElementById('price');
+        let ingredients = document.getElementById('ingredients');
+    
         name.textContent = potion.name;
+        effect.textContent = potion.effect;
+        price.textContent = potion.price;
+        ingredients.textContent += potion.ingredients;
+
         modal.style.display = 'block';
         close.addEventListener('click', () => {
             modal.style.display = 'none';

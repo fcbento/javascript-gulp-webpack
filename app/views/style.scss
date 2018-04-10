@@ -1,6 +1,12 @@
-li{
-    display: inline;
-    list-style: none;
+#header{
+    li{
+        display: inline;
+        list-style: none;
+    }
+
+    nav{
+        background-color: indigo;
+    }
 }
 
 #allPotions {
@@ -28,7 +34,7 @@ li{
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 60%;
 }
 
 .close{
