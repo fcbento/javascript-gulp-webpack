@@ -30,6 +30,9 @@ header{
         .info{
             color: $orange;
         }
+        #bag{
+            color: $orange;
+        }
     }
 
     nav{
@@ -147,6 +150,10 @@ footer{
         border-radius: 6px;
         font-size: 18px;
         margin-bottom: 10px;
+        cursor: pointer;
+        &:focus{
+            outline: none;
+        }
     }
 
     h6{

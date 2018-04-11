@@ -1,6 +1,7 @@
 import ProductModule from './products.module'
 
 const pm = new ProductModule();
+let count = 0;
 
 class ProductController {
 
@@ -27,6 +28,7 @@ class ProductController {
     openModal(potion) {
         const modal = document.getElementById('myModal');
         const close = document.getElementsByClassName('close')[0];
+        const addCart = document.getElementById('addCart');
 
         let name = document.getElementById('name');
         let effect = document.getElementById('effect');
@@ -41,9 +43,19 @@ class ProductController {
 
         modal.style.display = 'block';
 
-        close.addEventListener('click', (potion) => {
+        close.addEventListener('click', () => {
             modal.style.display = 'none';
         });
+
+        addCart.addEventListener('click', () => {
+            this.addToBag(potion);
+        })
+    }
+
+    addToBag(potion){
+        count += 1;
+        const bag = document.getElementById('bag');
+        bag.textContent = count;
     }
 }
 
