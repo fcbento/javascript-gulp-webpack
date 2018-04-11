@@ -37,7 +37,7 @@ gulp.task('scripts', () => {
 });
 
 //Run
-gulp.task('default', ['copyHtml', 'sass', 'flexbox', 'webpack']);
+gulp.task('default', ['copyHtml', 'sass', 'flexbox', 'webpack', 'imageMin']);
 
 //Watch
 gulp.task('watch', () => {

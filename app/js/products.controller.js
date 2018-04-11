@@ -27,7 +27,7 @@ class ProductController {
 
     openModal(potion) {
         const modal = document.getElementById('myModal');
-        const close = document.getElementsByClassName('close')[0];
+        const close = document.getElementsByClassName('closeModal')[0];
         const addCart = document.getElementById('addCart');
 
         let name = document.getElementById('name');
@@ -45,7 +45,7 @@ class ProductController {
 
         close.addEventListener('click', () => {
             modal.style.display = 'none';
-        });
+        })
 
         addCart.addEventListener('click', () => {
             this.addToBag(potion);
@@ -56,6 +56,22 @@ class ProductController {
         count += 1;
         const bag = document.getElementById('bag');
         bag.textContent = count;
+    }
+
+    openMenu(){
+        
+        const menu = document.getElementById('openMenu');
+        const close = document.getElementsByClassName('close')[0];
+        const nav = document.getElementById('navbar');
+
+        menu.addEventListener('click', () => {
+            nav.style.display = 'block';
+        });
+
+        close.addEventListener('click', () => {
+            nav.style.display = 'none';
+        });
+        
     }
 }
 
