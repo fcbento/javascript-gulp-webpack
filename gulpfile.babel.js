@@ -8,8 +8,8 @@ import babel from 'gulp-babel';
 import webpack from 'webpack-cli';
 import webpackStream from 'webpack-stream';
 import webpackConfig from './webpack.config.babel';
+import plumber from 'gulp-plumber';
 
-var plumber = require("gulp-plumber");
 // HTML to Distribution folder
 gulp.task('copyHtml', () => {
     gulp.src('app/views/*.html')
@@ -37,7 +37,7 @@ gulp.task('scripts', () => {
 });
 
 //Run
-gulp.task('default', ['copyHtml', 'sass', 'flexbox', 'webpack', 'imageMin']);
+gulp.task('default', ['copyHtml', 'sass', 'flexbox', 'webpack']);
 
 //Watch
 gulp.task('watch', () => {

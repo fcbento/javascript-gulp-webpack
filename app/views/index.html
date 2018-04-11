@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Merlin's Potions - Fine potions since 1026</title>
     <link rel="stylesheet" href="flexboxgrid.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -23,10 +24,10 @@
                         <input type="text" placeholder="Search our stock">
                     </div>
                     <div class="col-xs-3">
-                        <p>Free shipping on orders over $50</p>
+                        <p class="info">Free shipping on orders over $50</p>
                     </div>
                     <div class="col-xs-1">
-                        <img src="assets/bag.png" alt="">
+                        <img class="bagimg" src="assets/bag.png" alt="">
                     </div>
                     <div class="col-xs-1">
                         <p>BAG: 1</p>
@@ -40,22 +41,22 @@
                     <div class="col-xs-9">
                         <ul>
                             <li>
-                                Potions
+                                Potions <i class="fa fa-caret-down"></i>
                             </li>
                             <li>
-                                Ingredients
+                                Ingredients <i class="fa fa-caret-down"></i>
                             </li>
                             <li>
-                                Books
+                                Books <i class="fa fa-caret-down"></i>
                             </li>
                             <li>
-                                Supplies
+                                Supplies <i class="fa fa-caret-down"></i>
                             </li>
                             <li>
-                                Charms
+                                Charms <i class="fa fa-caret-down"></i>
                             </li>
                             <li>
-                                Clearance
+                                Clearance <i class="fa fa-caret-down"></i>
                             </li>
                         </ul>
                     </div>
@@ -83,11 +84,11 @@
                                 <img id="image" width="350px;" alt="Potion name">
                             </div>
                             <div class="col-xs-6">
-                                <p id="name"></p>
+                                <h1 id="name"></h1>
                                 <h6>User/Effect</h6>
                                 <p id="effect"></p>
                                 <h6>Ingredients</h6>
-                                <div id="ingredients"></div>
+                                <p id="ingredients"><br></p>
                                 <h6>Price</h6>
                                 <p id="price"></p>
                                 <button>add to cart</button>
@@ -113,11 +114,13 @@
 
                     <div class="row" id="icons">
                         <div class="col-xs-12">
-                            <i>icon1</i>
-                            <i>icon1</i>
-                            <i>icon1</i>
-                            <i>icon1</i>
-                            <i>icon1</i>
+                            <span>
+                                <i class="fa fa-facebook"></i>
+                            </span>
+                            <i class="fa fa-twitter"></i>
+                            <i class="fa fa-pinterest"></i>
+                            <i class="fa fa-tumblr"></i>
+                            <i class="fa fa-google-plus"></i>
                         </div>
                     </div>
 

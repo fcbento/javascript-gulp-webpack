@@ -32,18 +32,16 @@ class ProductController {
         let effect = document.getElementById('effect');
         let price = document.getElementById('price');
         let image = document.getElementById('image').src = `assets/${potion.image}`;
+        let ingredients = document.getElementById('ingredients');
 
         name.textContent = potion.name;
         effect.textContent = potion.effect;
-        price.textContent = `$ ${potion.price};`
-
-        potion.ingredients.forEach((ingredient) => {
-            let ingredientsDom = document.getElementById('ingredients');
-            ingredientsDom.innerHTML += `<p id="ingredientm">${ingredient}</p>`;
-        });
+        price.textContent = `$ ${potion.price}`
+        ingredients.textContent = potion.ingredients
 
         modal.style.display = 'block';
-        close.addEventListener('click', () => {
+
+        close.addEventListener('click', (potion) => {
             modal.style.display = 'none';
         });
     }
