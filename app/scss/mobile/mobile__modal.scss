@@ -1,0 +1,22 @@
+@media only screen and (max-width: 600px) {
+    .modal{
+
+        button{
+            font-size: 12px;
+        }
+
+        h6{
+            font-size: 13px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        #image{
+            width: 150px;
+        }
+    }
+
+    .modal-content{
+        width: 80%;
+    }
+}

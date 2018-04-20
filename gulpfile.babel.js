@@ -12,13 +12,13 @@ import plumber from 'gulp-plumber';
 
 // HTML to Distribution folder
 gulp.task('copyHtml', () => {
-    gulp.src('app/views/*.html')
+    gulp.src('app/*.html')
         .pipe(gulp.dest('dist'));
 });
 
 // Convert Sass to Css
 gulp.task('sass', () => {
-    gulp.src('app/views/*.scss')
+    gulp.src('app/scss/*.scss')
         .pipe(gulpSass().on('error', gulpSass.logError))
         .pipe(gulp.dest('dist'));
 });
@@ -41,9 +41,9 @@ gulp.task('default', ['copyHtml', 'sass', 'flexbox', 'webpack', 'imageMin']);
 
 //Watch
 gulp.task('watch', () => {
-    gulp.watch('app/dist/*.scss', ['sass']);
+    gulp.watch('app/dist/*.css', ['sass']);
     gulp.watch('app/dist/*.html', ['copyHtml']);
-    gulp.watch('app/js/*.js', ['webpack']);
+    gulp.watch('app/dist/*.js', ['webpack']);
 });
 
 gulp.task("webpack", function () {

@@ -1,0 +1,27 @@
+@import 'base/colors';
+main{
+    
+    #allPotions {
+       
+        margin-top: 0.8rem;
+        padding: 60px;
+        margin-bottom: 1rem;
+       
+        p{
+            cursor: pointer;
+            font-size: 20px;
+            &:hover{
+                color: rgb(68, 68, 68);
+            }
+        }
+        
+        #potionImg{
+            width: 150px;
+            height: 150px;
+        }
+
+        span{
+            color: $orange;
+        }
+    }
+}

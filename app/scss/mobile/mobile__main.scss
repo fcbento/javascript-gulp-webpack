@@ -1,0 +1,19 @@
+@media only screen and (max-width: 600px) {   
+    main{
+        
+        #allPotions {
+            
+            margin-bottom: 1rem;
+            padding: 0;
+        
+            p{
+                font-size: 11px;
+            }
+
+            #potionImg{
+                width: 100%;
+                height: 150px;
+            }
+        }
+    }
+}

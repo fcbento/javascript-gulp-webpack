@@ -1,0 +1,64 @@
+@import 'base/colors';
+header{
+   
+    #main-header{
+       
+        padding: 25px;
+       
+        i{
+            display: none;
+        }
+
+        input{
+            border:1px solid black;
+            padding: 10px;
+            font-size: 17px;
+            border-radius: 6px;
+            &:focus{outline: none}
+            width: 100%;
+        }
+
+        img{
+            margin-left: 15px;
+        }
+
+        .bagimg{
+            margin-left:4rem;
+        }
+
+        .info{
+            color: $orange;
+        }
+
+        #bag{
+            color: $orange;
+        }
+    }
+
+    nav{
+      
+        background-color: $indigo;
+        padding: 15px;
+       
+        .close{
+            display: none;
+        }
+        
+        .close{
+            float: right;
+            font-size: 38px;
+            color: #aaa;
+            cursor: pointer;
+        }
+        
+        li{
+            display: inline;
+            list-style: none;
+            color: white;
+            margin-right: 1rem;
+            font-size: 22px;
+            margin-left: 1.5rem;
+            cursor: pointer;
+        }
+    }
+}

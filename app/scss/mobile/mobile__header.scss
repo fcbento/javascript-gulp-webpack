@@ -1,0 +1,61 @@
+@import 'base/colors';
+
+@media only screen and (max-width: 600px) {    
+    header{
+            
+        #main-header {
+            
+            i{
+                display: block;
+                font-size: 35px;
+                cursor: pointer;
+                color: $indigo;
+            }
+
+            img{
+                width: 246px;
+            }
+        
+            .bagimg{
+                width: 35px;
+            }
+
+            .info{
+                display: none;
+            }
+
+            input{
+                display: none;
+            }
+        }
+
+        nav{
+            
+            display: none;
+            
+            .close{
+                display: block;
+            }
+
+            li{
+                font-size: 27px;
+                border-bottom: 1px solid grey;
+                display: block;
+            }
+
+            .fa{
+                display: none;
+            }
+
+            .sign{
+                font-size: 15px;
+            }
+
+            .register{
+                li{
+                    display: inline;
+                }
+            }
+        }   
+    }
+}
