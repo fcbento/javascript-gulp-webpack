@@ -7,10 +7,10 @@ class ProductController {
 
     displayPotions() {
         const potions = pm.getData();
-        potions.forEach((potion) => {
+        potions.map((potion) => {
             const allPotionsDom = document.querySelector('#allPotions');
             allPotionsDom.innerHTML += `<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4"> <img id="potionImg" src="assets/${potion.image}" alt="Potion name"> <p id="detailed_${potion.id}"> ${potion.name} - <span>$ ${potion.price} </span></p> </div>`
-        });
+        })
         this.detail(potions)
     }
 
@@ -52,14 +52,14 @@ class ProductController {
         })
     }
 
-    addToBag(potion){
+    addToBag(potion) {
         count += 1;
         const bag = document.getElementById('bag');
         bag.textContent = count;
     }
 
-    openMenu(){
-        
+    openMenu() {
+
         const menu = document.getElementById('openMenu');
         const close = document.getElementsByClassName('close')[0];
         const nav = document.getElementById('navbar');
@@ -71,7 +71,7 @@ class ProductController {
         close.addEventListener('click', () => {
             nav.style.display = 'none';
         });
-        
+
     }
 }
 
